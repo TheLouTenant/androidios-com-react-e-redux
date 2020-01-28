@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 
-const estilo = StyleSheet.create({
+const estilo = {
   HelloWorldApp: {flex: 1, justifyContent: 'center', alignItems: 'center'},
   text: {color: '#fff', backgroundColor: 'red'},
-});
-
+};
 export default class HelloWorldApp extends Component {
   render() {
-    const {HelloWorldApp, text} = estilo;x
+    const {HelloWorldApp, text} = estilo;
     return (
-      <View style={estilo.HelloWorldApp}>
-        <Text style={estilo.text}>Hello, React World!</Text>
+      <View style={HelloWorldApp}>
+        <Text style={text}>Hello, React World!</Text>
       </View>
     );
   }
