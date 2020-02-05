@@ -5,8 +5,8 @@ class MeuComponente extends Component {
   render() {
     return (
       <View>
-        <Text>Primeiro Parametro</Text>
-        <Text>Segundo Parametro</Text>
+        <Text>{this.props.prop1}</Text>
+        <Text>{this.props.prop2}</Text>
       </View>
     );
   }
@@ -14,6 +14,6 @@ class MeuComponente extends Component {
 
 export default class HelloWorldApp extends Component {
   render() {
-    return <MeuComponente></MeuComponente>;
+    return <MeuComponente prop1='Banana' prop2='Abacaxi'></MeuComponente>;
   }
 }
